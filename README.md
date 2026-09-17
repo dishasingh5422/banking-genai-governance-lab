@@ -1,5 +1,8 @@
 # Banking GenAI Governance Lab
 
+[![Project validation](https://github.com/dishasingh5422/banking-genai-governance-lab/actions/workflows/ci.yml/badge.svg)](https://github.com/dishasingh5422/banking-genai-governance-lab/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+
 A full-stack, local-first consumer-banking decision-support project combining predictive analytics with citation-grounded GenAI controls. It uses reproducible synthetic data and keeps every customer-impacting action under human review.
 
 > Portfolio simulation only. This is not an official bank system, regulatory compliance product or production decision engine.
