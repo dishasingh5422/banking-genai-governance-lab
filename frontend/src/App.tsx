@@ -1,6 +1,6 @@
 import { FormEvent, useEffect, useMemo, useState } from "react";
 
-const API = import.meta.env.VITE_API_URL ?? "http://127.0.0.1:8000";
+const API = import.meta.env.VITE_API_URL ?? `${window.location.protocol}//${window.location.hostname}:8000`;
 const pages = ["Overview", "Customer Review", "Case Copilot", "Model Governance", "Evaluation", "Data Quality"] as const;
 type Page = typeof pages[number];
 type Summary = { customers: number; transactions: number; review_queue: number; high_risk_customers: number; data_quality_score: number; attrition_rate: number; model_status: string; metrics: Record<string, number>; age_group_metrics: {group:string; customers:number; actual_attrition_rate:number; high_risk_rate:number}[]; max_high_risk_rate_difference:number; limitations:string[] };

@@ -12,7 +12,7 @@ class CopilotRequest(BaseModel):
 
 service = LabService()
 app = FastAPI(title="Banking GenAI Governance Lab", description="Human-reviewed consumer-banking analytics and governed GenAI decision support.", version="1.0.0")
-app.add_middleware(CORSMiddleware, allow_origins=["http://localhost:5173", "http://127.0.0.1:5173"], allow_credentials=False, allow_methods=["GET", "POST"], allow_headers=["*"])
+app.add_middleware(CORSMiddleware, allow_origins=["http://localhost:5173", "http://127.0.0.1:5173", "http://localhost:8088", "http://127.0.0.1:8088"], allow_credentials=False, allow_methods=["GET", "POST"], allow_headers=["*"])
 
 
 @app.get("/health")

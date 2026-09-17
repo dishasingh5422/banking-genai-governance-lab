@@ -12,6 +12,9 @@ node_modules/
 .next/
 dist/
 coverage/
+*.tsbuildinfo
+vite.config.js
+vite.config.d.ts
 
 # Environment and local state
 .env
